@@ -1,8 +1,7 @@
--
-  name: windows connectivity
-  hosts: all
-  become: false
-  gather_facts: false
-  tasks:
-    - name: ping test
-    ansible.windows.win_ping:
+-  name: windows connectivity
+   hosts: all
+   become: false
+   gather_facts: false
+   tasks:
+     - name: ping test
+       ansible.windows.win_ping:
