@@ -4,4 +4,5 @@
    gather_facts: false
    tasks:
     - name: ping test
-      win_ping: 
+      ansible.windows.win_ping: ping
+        data: crash
