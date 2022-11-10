@@ -2,5 +2,5 @@
   name: windows connectivity
   hosts: all
   tasks:
-    - name: ping
+   - name: ping test
       ansible.windows.win_ping:
