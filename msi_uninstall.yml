@@ -6,5 +6,6 @@
       win_package:
         path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
         state: absent
-        removes: 
-          path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
+    - name: remove package files 
+      win_file:
+        path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
