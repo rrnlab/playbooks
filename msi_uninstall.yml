@@ -1,11 +1,11 @@
 ---
--  name: Uninstall an MSI package
-   host: all
-   tasks:
+- name: Uninstall an MSI package
+  hosts: all
+  tasks:
     - name: Uninstall task
-      win_package: 
-       path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
-       state: absent
-       wait: yes
-       removes: 
-         path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
+      win_package:
+        path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
+        state: absent
+        wait: yes
+        removes: 
+          path: C:\ansibleproject\httpd-2.2.25-win32-x86-no_ssl.msi
