@@ -1,8 +1,9 @@
--  name: windows connectivity
-   hosts: 172.23.189.58
-   become: false
-   gather_facts: false
-   tasks:
-    - name: ping test
-      ansible.windows.win_ping:
-        data: crash
+---
+- name: windows connectivity
+  hosts: 172.23.189.58
+  become: false
+  gather_facts: false
+  tasks:
+  - name: ping test
+    ansible.windows.win_ping:
+     data: crash
