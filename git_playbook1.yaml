@@ -1,6 +1,6 @@
 ---
 - name: windows connectivity
-  hosts: 172.23.61.4
+  hosts: all
   become: false
   gather_facts: false
   tasks:
