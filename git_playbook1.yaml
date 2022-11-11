@@ -2,5 +2,5 @@
   name: windowsconnectcheck
   hosts: 172.23.61.4
   tasks:
-    - name: pingtest
-      anisble.windows.win_ping
+  - name: pingtest
+    anisble.windows.win_ping
