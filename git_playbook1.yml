@@ -1,5 +1,9 @@
 ---
+
 - hosts: all
+
   tasks:
-  - name: pingtest
-         ansible.windows.win_ping
+
+   - name: Ping check
+
+     win_ping:
